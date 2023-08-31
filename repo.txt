@@ -16,3 +16,9 @@
         }
     ]
 }
+
+Si estás usando Windows ve a:
+
+panel de control > cuentas de usuario > administrador de credenciales > Credenciales de Windows > Credenciales genéricas
+
+Luego elimine las claves de Github. :)
