@@ -1,0 +1,18 @@
+# repositorio frontend
+  controlacademico_frontend
+# repositorio backend
+  colegiobackendbeta
+{
+    "builds":[
+        {
+            "src": "./dist/app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
