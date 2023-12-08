@@ -2196,6 +2196,7 @@ export const busquedaMatriculadetallesPorAlumnoPadre = async (req: Request, res:
     const { padreId, valor } = req.params;
     try {
         let matriculadetalles = await Matriculadetalle.findAll({
+            
             where: {
                 estado: true,
                 '$matricula.alumno.padre.id$': padreId,
@@ -2232,6 +2233,7 @@ export const busquedaMatriculadetallesPorAlumnoPadre = async (req: Request, res:
                     },
                 ],
             },
+        
             order: [
                 [
                     { model: Matricula, as: 'matricula' },
@@ -2240,7 +2242,7 @@ export const busquedaMatriculadetallesPorAlumnoPadre = async (req: Request, res:
                     'apellidopaterno', 'ASC'
                 ]
             ],
-            attributes: ['id'],
+        
             include: [
                 {
                     model: Matricula,

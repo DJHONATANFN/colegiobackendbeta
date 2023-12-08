@@ -2248,7 +2248,6 @@ const busquedaMatriculadetallesPorAlumnoPadre = (req, res) => __awaiter(void 0, 
                     'apellidopaterno', 'ASC'
                 ]
             ],
-            attributes: ['id'],
             include: [
                 {
                     model: matricula_1.default,
